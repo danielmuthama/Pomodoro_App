@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet " href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+
+    <!--Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!--Js-->
+    <script src="main.js"></script>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!--font Awesome-->
+    <script src="https://kit.fontawesome.com/0a2cb64727.js"></script>
+
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+    <title>Pomodoro App</title>
+</head>
+
+<body onload="template()">
+    <div class="container">
+        <h1 class="text-center my-5 heading" style="text-decoration-line: underline; font-size: 4em;"><b>Pomodoro App</b></h1>
+
+        <div class="container timer">
+            <div class="row">
+                <div class="col-5">
+                    <h4 id="minutes"></h4>
+                </div>
+                <div class="col-2"><br><br>
+                    <h4>:</h4>
+                </div>
+                <div class="col-5">
+                    <h4 id="seconds"></h4>
+                </div>
+            </div>
+        </div>
+
+        <h3 id="done" class="text-center my=5"></h3>
+
+        <div class="container d-flex justify-content-center align-items-center my-5">
+            <button class="btn" onclick="start()">
+          <i class="fas fa-play fa-2x"></i>
+        </button>
+            <a href="index.html"><i class="fas fa-redo-alt fa-2x"></i></a>
+        </div>
+    </div>
+    <p style="text-align: center;"> Designed by Daniel Muthama</p>
+</body>
+
+</html>
